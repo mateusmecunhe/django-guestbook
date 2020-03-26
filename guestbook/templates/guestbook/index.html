@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <title>guestbook</title>
+    <link href="{% static 'guestbook/index.css' %}" rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <a href="{% url 'sign' %}" class="btn btn-outline-secondary">sign our guestook!</a>
+        {%for comment in comments%}
+        <div class="comment-section">
+
+            <p class="comment">
+                {{comment.comment}}
+            </p>
+            <p class="name">
+                {{comment.name}}
+            </p>
+            <p class="date">
+                {{comment.date_added}} <br>
+            </p>
+        </div>
+
+        {%endfor%}
+
+
+    </div>
+</body>
+<style>
+
+</style>
