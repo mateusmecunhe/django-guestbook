@@ -14,10 +14,11 @@
 }
 
 .comment-section{
-    background-color: rgb(189, 133, 189);
+    background-color: rgba(189, 133, 189, 0.329);
     max-width: 400px;
     margin: 10px auto;
     padding: 20px 5px;
+    border-radius: 20px;
 }
 .comment{
     color: goldenrod;
@@ -25,11 +26,11 @@
 }
 
 .name{
-    color: wheat;
+    color: yellowgreen;
     font-weight: 600;
 }
 
 .date{
-    color: wheat;
+    color: yellowgreen;
     font-style: italic;
 }
